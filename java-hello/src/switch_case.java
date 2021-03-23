@@ -11,7 +11,7 @@ public class switch_case {
                 System.out.println("Ez is finom, de nme erre gondoltam");
                 break;
             case "alma":
-                System.out.println("na erre gondolta");
+                System.out.println("na erre gondoltam");
                 break;
             default:
                 System.out.println("Most akkor mi van?");
