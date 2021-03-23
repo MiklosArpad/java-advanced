@@ -7,6 +7,8 @@ public class quiz_progi {
 
         String kulcsszo = "alma";
         boolean futas = true;
+        int talalat = 0;
+        int pontszam = 0;
 
         Scanner bemenet = new Scanner(System.in);
 
@@ -34,12 +36,59 @@ public class quiz_progi {
                     break;
                 case  "málna":
                     System.out.println("igen, a málnára gondoltam");
+                    pontszam++;
                     futas = false;
                     break;
                 default:
                     System.out.println("ez nincs benne a listába");
             }
+            talalat++;
+            if(talalat ==2) {
+                System.out.println("csak kettő lehet telálgatni, sajnálom a pontszámod: zéró");
+                futas = false;
+
+            }
         }
-        System.out.println("ELTALÁLTAD!! Játszol még egyet??");
+        System.out.println("------------------------------------------");
+
+        futas = true;
+
+        System.out.println("Találd ki, melyik tudósra gondolok!");
+        System.out.println("neumann, wigner, szilárd, teller");
+
+        kulcsszo = "teller";
+        futas = true;
+        talalat = 0;
+
+        while (futas) {
+            String text = bemenet.nextLine();
+
+            switch (text) {
+                case "neumann":
+                    System.out.println("nem a Neumannra gondoltam");
+                    break;
+                case "wigner":
+                    System.out.println("nem a wignerre gondoltam");
+                    break;
+                case "szilárd":
+                    System.out.println("nem a Szilárdra gondoltam");
+                    break;
+                case "teller":
+                    System.out.println("Igen, Teller Edére gondoltam");
+                    pontszam++;
+                    futas= false;
+                    break;
+                default:
+                    System.out.println("ez nincs benne a listába");
+            }
+            talalat++;
+            if(talalat == 2) {
+                System.out.println("csak kettő lehet telálgatni, sajnálom a pontszmámod: zéró");
+                futas = false;
+            }
+
+        }
+        System.out.println("a pontszámod: " + pontszam);
+        System.out.println("Játszol még egyet??");
     }
 }
