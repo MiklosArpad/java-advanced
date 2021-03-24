@@ -92,3 +92,6 @@ public class quiz_progi {
         System.out.println("Játszol még egyet??");
     }
 }
+
+
+//  https://www.youtube.com/watch?v=_GXU6qriGRo&list=PLUnQJ5ZQoqQIfw1U4Tml10PlpcBS1KiGs&index=12
